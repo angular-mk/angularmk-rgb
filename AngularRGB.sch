@@ -1,0 +1,138 @@
+EESchema Schematic File Version 4
+LIBS:AngularRGB-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-MU U?
+U 1 1 5CB6437A
+P 2700 5450
+F 0 "U?" H 2700 3564 50  0000 C CNN
+F 1 "ATmega32U4-MU" H 2700 3473 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm" H 2700 5450 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2700 5450 50  0001 C CNN
+	1    2700 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5CB644DB
+P 1900 5650
+F 0 "C?" H 2078 5696 50  0000 L CNN
+F 1 "1u" H 2078 5605 50  0000 L CNN
+F 2 "" H 1900 5650 50  0001 C CNN
+F 3 "~" H 1900 5650 50  0001 C CNN
+	1    1900 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5250 1900 5250
+Wire Wire Line
+	1900 5250 1900 5400
+$Comp
+L power:GND #PWR?
+U 1 1 5CB6465A
+P 1900 6000
+F 0 "#PWR?" H 1900 5750 50  0001 C CNN
+F 1 "GND" H 1905 5827 50  0000 C CNN
+F 2 "" H 1900 6000 50  0001 C CNN
+F 3 "" H 1900 6000 50  0001 C CNN
+	1    1900 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 6000 1900 5900
+NoConn ~ 2100 4550
+Text Label 2100 5050 2    50   ~ 0
+D-
+Text Label 2100 4950 2    50   ~ 0
+D+
+$Comp
+L power:VCC #PWR?
+U 1 1 5CB6475E
+P 1900 4650
+F 0 "#PWR?" H 1900 4500 50  0001 C CNN
+F 1 "VCC" H 1917 4823 50  0000 C CNN
+F 2 "" H 1900 4650 50  0001 C CNN
+F 3 "" H 1900 4650 50  0001 C CNN
+	1    1900 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4650 1900 4750
+Wire Wire Line
+	1900 4750 2100 4750
+$Comp
+L power:VCC #PWR?
+U 1 1 5CB6480B
+P 2700 3500
+F 0 "#PWR?" H 2700 3350 50  0001 C CNN
+F 1 "VCC" H 2717 3673 50  0000 C CNN
+F 2 "" H 2700 3500 50  0001 C CNN
+F 3 "" H 2700 3500 50  0001 C CNN
+	1    2700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3650 2700 3650
+Wire Wire Line
+	2800 3650 2700 3650
+Connection ~ 2700 3650
+Wire Wire Line
+	2700 3650 2700 3500
+$Comp
+L power:VCC #PWR?
+U 1 1 5CB648AF
+P 700 800
+F 0 "#PWR?" H 700 650 50  0001 C CNN
+F 1 "VCC" H 717 973 50  0000 C CNN
+F 2 "" H 700 800 50  0001 C CNN
+F 3 "" H 700 800 50  0001 C CNN
+	1    700  800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB6491D
+P 700 1300
+F 0 "#PWR?" H 700 1050 50  0001 C CNN
+F 1 "GND" H 705 1127 50  0000 C CNN
+F 2 "" H 700 1300 50  0001 C CNN
+F 3 "" H 700 1300 50  0001 C CNN
+	1    700  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5CB64AE4
+P 700 1050
+F 0 "C?" H 878 1096 50  0000 L CNN
+F 1 "1u" H 878 1005 50  0000 L CNN
+F 2 "" H 700 1050 50  0001 C CNN
+F 3 "~" H 700 1050 50  0001 C CNN
+	1    700  1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5CB64BDF
+P 1350 1050
+F 0 "C?" H 1528 1096 50  0000 L CNN
+F 1 "CAP" H 1528 1005 50  0000 L CNN
+F 2 "" H 1350 1050 50  0001 C CNN
+F 3 "~" H 1350 1050 50  0001 C CNN
+	1    1350 1050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
