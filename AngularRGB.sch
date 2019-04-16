@@ -319,4 +319,63 @@ Wire Notes Line
 	600  1900 4400 1900
 Text Notes 800  6750 2    50   ~ 0
 MCU\n
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 5CB6AAC4
+P 5050 1500
+F 0 "J?" H 4700 2350 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 4950 2250 50  0000 C CNN
+F 2 "" H 5200 1500 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5200 1500 50  0001 C CNN
+	1    5050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5CB6B5D1
+P 6050 800
+F 0 "#PWR?" H 6050 650 50  0001 C CNN
+F 1 "VCC" H 6067 973 50  0000 C CNN
+F 2 "" H 6050 800 50  0001 C CNN
+F 3 "" H 6050 800 50  0001 C CNN
+	1    6050 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1400 5650 1500
+Wire Wire Line
+	5650 1600 5650 1700
+$Comp
+L Device:Fuse F?
+U 1 1 5CB6C649
+P 5800 900
+F 0 "F?" V 5603 900 50  0000 C CNN
+F 1 "Fuse" V 5694 900 50  0000 C CNN
+F 2 "" V 5730 900 50  0001 C CNN
+F 3 "~" H 5800 900 50  0001 C CNN
+	1    5800 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 2400 5050 2400
+Wire Wire Line
+	4750 2400 4900 2400
+Connection ~ 4900 2400
+Wire Wire Line
+	4900 2500 4900 2400
+$Comp
+L power:GND #PWR?
+U 1 1 5CB6B180
+P 4900 2500
+F 0 "#PWR?" H 4900 2250 50  0001 C CNN
+F 1 "GND" H 4905 2327 50  0000 C CNN
+F 2 "" H 4900 2500 50  0001 C CNN
+F 3 "" H 4900 2500 50  0001 C CNN
+	1    4900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 900  6050 900 
+Wire Wire Line
+	6050 900  6050 800 
 $EndSCHEMATC
