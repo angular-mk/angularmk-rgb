@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:AngularRGB-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -322,60 +322,201 @@ MCU\n
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J?
 U 1 1 5CB6AAC4
-P 5050 1500
-F 0 "J?" H 4700 2350 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 4950 2250 50  0000 C CNN
-F 2 "" H 5200 1500 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5200 1500 50  0001 C CNN
-	1    5050 1500
+P 5200 1500
+F 0 "J?" H 5200 2350 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 5200 2250 50  0000 C CNN
+F 2 "" H 5350 1500 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5350 1500 50  0001 C CNN
+	1    5200 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5CB6B5D1
-P 6050 800
-F 0 "#PWR?" H 6050 650 50  0001 C CNN
-F 1 "VCC" H 6067 973 50  0000 C CNN
-F 2 "" H 6050 800 50  0001 C CNN
-F 3 "" H 6050 800 50  0001 C CNN
-	1    6050 800 
+P 6200 800
+F 0 "#PWR?" H 6200 650 50  0001 C CNN
+F 1 "VCC" H 6217 973 50  0000 C CNN
+F 2 "" H 6200 800 50  0001 C CNN
+F 3 "" H 6200 800 50  0001 C CNN
+	1    6200 800 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 1400 5650 1500
+	5800 1400 5800 1500
 Wire Wire Line
-	5650 1600 5650 1700
+	5800 1600 5800 1650
 $Comp
 L Device:Fuse F?
 U 1 1 5CB6C649
-P 5800 900
-F 0 "F?" V 5603 900 50  0000 C CNN
-F 1 "Fuse" V 5694 900 50  0000 C CNN
-F 2 "" V 5730 900 50  0001 C CNN
-F 3 "~" H 5800 900 50  0001 C CNN
-	1    5800 900 
+P 5950 900
+F 0 "F?" V 5753 900 50  0000 C CNN
+F 1 "Fuse" V 5844 900 50  0000 C CNN
+F 2 "" V 5880 900 50  0001 C CNN
+F 3 "~" H 5950 900 50  0001 C CNN
+	1    5950 900 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
+	5050 2400 5200 2400
+Wire Wire Line
 	4900 2400 5050 2400
+Connection ~ 5050 2400
 Wire Wire Line
-	4750 2400 4900 2400
-Connection ~ 4900 2400
-Wire Wire Line
-	4900 2500 4900 2400
+	5050 2500 5050 2400
 $Comp
 L power:GND #PWR?
 U 1 1 5CB6B180
-P 4900 2500
-F 0 "#PWR?" H 4900 2250 50  0001 C CNN
-F 1 "GND" H 4905 2327 50  0000 C CNN
-F 2 "" H 4900 2500 50  0001 C CNN
-F 3 "" H 4900 2500 50  0001 C CNN
-	1    4900 2500
+P 5050 2500
+F 0 "#PWR?" H 5050 2250 50  0001 C CNN
+F 1 "GND" H 5055 2327 50  0000 C CNN
+F 2 "" H 5050 2500 50  0001 C CNN
+F 3 "" H 5050 2500 50  0001 C CNN
+	1    5050 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 900  6050 900 
+	6100 900  6200 900 
 Wire Wire Line
-	6050 900  6050 800 
+	6200 900  6200 800 
+NoConn ~ 5800 2000
+NoConn ~ 5800 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5CB78A38
+P 6450 1250
+F 0 "#PWR?" H 6450 1000 50  0001 C CNN
+F 1 "GND" H 6455 1077 50  0000 C CNN
+F 2 "" H 6450 1250 50  0001 C CNN
+F 3 "" H 6450 1250 50  0001 C CNN
+	1    6450 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB7A006
+P 5950 1100
+F 0 "R?" V 5743 1100 50  0000 C CNN
+F 1 "5k1" V 5834 1100 50  0000 C CNN
+F 2 "" V 5880 1100 50  0001 C CNN
+F 3 "~" H 5950 1100 50  0001 C CNN
+	1    5950 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB7AB72
+P 6250 1200
+F 0 "R?" V 6457 1200 50  0000 C CNN
+F 1 "5k1" V 6366 1200 50  0000 C CNN
+F 2 "" V 6180 1200 50  0001 C CNN
+F 3 "~" H 6250 1200 50  0001 C CNN
+	1    6250 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 1200 5800 1200
+Wire Wire Line
+	6400 1200 6450 1200
+Wire Wire Line
+	6450 1200 6450 1250
+Wire Wire Line
+	6450 1200 6450 1100
+Wire Wire Line
+	6450 1100 6100 1100
+Connection ~ 6450 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5CB8AE03
+P 6450 1850
+F 0 "#PWR?" H 6450 1600 50  0001 C CNN
+F 1 "GND" H 6455 1677 50  0000 C CNN
+F 2 "" H 6450 1850 50  0001 C CNN
+F 3 "" H 6450 1850 50  0001 C CNN
+	1    6450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5CB8B7A3
+P 7550 1750
+F 0 "#PWR?" H 7550 1600 50  0001 C CNN
+F 1 "VCC" H 7567 1923 50  0000 C CNN
+F 2 "" H 7550 1750 50  0001 C CNN
+F 3 "" H 7550 1750 50  0001 C CNN
+	1    7550 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1750 7550 1800
+Wire Wire Line
+	7550 1800 7500 1800
+Wire Wire Line
+	6500 1800 6450 1800
+Wire Wire Line
+	6450 1800 6450 1850
+Wire Wire Line
+	5800 1500 6600 1500
+Wire Wire Line
+	6600 1500 6600 1200
+Wire Wire Line
+	6600 1200 6900 1200
+Wire Wire Line
+	6900 1200 6900 1300
+Connection ~ 5800 1500
+Wire Wire Line
+	5800 1650 6250 1650
+Wire Wire Line
+	6250 1650 6250 2350
+Wire Wire Line
+	6250 2350 6900 2350
+Wire Wire Line
+	6900 2350 6900 2300
+Connection ~ 5800 1650
+Wire Wire Line
+	5800 1650 5800 1700
+Wire Wire Line
+	7100 1300 7100 1200
+Wire Wire Line
+	7100 1200 7300 1200
+Wire Wire Line
+	7100 2300 7100 2350
+Wire Wire Line
+	7100 2350 7300 2350
+Text Label 7600 1200 0    50   ~ 0
+D-
+Text Label 7600 2350 0    50   ~ 0
+D+
+$Comp
+L Power_Protection:USB6B1 U?
+U 1 1 5CB7FD9E
+P 7000 1800
+F 0 "U?" V 6650 1500 50  0000 L CNN
+F 1 "USB6B1" V 6650 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6025 1400 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3e/ec/b2/54/b2/76/47/90/CD00001361.pdf/files/CD00001361.pdf/jcr:content/translations/en.CD00001361.pdf" H 6050 1700 50  0001 C CNN
+	1    7000 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB931C6
+P 7450 1200
+F 0 "R?" V 7243 1200 50  0000 C CNN
+F 1 "22" V 7334 1200 50  0000 C CNN
+F 2 "" V 7380 1200 50  0001 C CNN
+F 3 "~" H 7450 1200 50  0001 C CNN
+	1    7450 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB93921
+P 7450 2350
+F 0 "R?" V 7243 2350 50  0000 C CNN
+F 1 "22" V 7334 2350 50  0000 C CNN
+F 2 "" V 7380 2350 50  0001 C CNN
+F 3 "~" H 7450 2350 50  0001 C CNN
+	1    7450 2350
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

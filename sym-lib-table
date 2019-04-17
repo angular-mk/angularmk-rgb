@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name MX_Alps_Hybrids)(type Legacy)(uri "${KIPRJMOD}/MX_Alps_Hybrid.pretty-master/Schematic Library/MX_Alps_Hybrids.lib")(options "")(descr ""))
+  (lib (name MX_Switches)(type Legacy)(uri /Users/Admin/Documents/AngularRGB/MX_Switches.pretty/MX_Switches.lib)(options "")(descr ""))
 )
