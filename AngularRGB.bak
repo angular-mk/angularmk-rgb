@@ -2249,10 +2249,10 @@ Connection ~ 8050 2200
 Wire Wire Line
 	8050 2200 8200 2200
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H7
 U 1 1 5CD12C80
 P 7850 1500
-F 0 "H?" H 7950 1551 50  0000 L CNN
+F 0 "H7" H 7950 1551 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7950 1460 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7850 1500 50  0001 C CNN
 F 3 "~" H 7850 1500 50  0001 C CNN
@@ -2263,10 +2263,10 @@ Connection ~ 7850 1600
 Wire Wire Line
 	7850 1600 8200 1600
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H9
 U 1 1 5CD12D86
 P 8200 1500
-F 0 "H?" H 8300 1551 50  0000 L CNN
+F 0 "H9" H 8300 1551 50  0000 L CNN
 F 1 "MountingHole_Pad" H 8300 1460 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8200 1500 50  0001 C CNN
 F 3 "~" H 8200 1500 50  0001 C CNN
@@ -2277,10 +2277,10 @@ Connection ~ 8200 1600
 Wire Wire Line
 	8200 1600 8450 1600
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H8
 U 1 1 5CD12E82
 P 7850 2100
-F 0 "H?" H 7950 2151 50  0000 L CNN
+F 0 "H8" H 7950 2151 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7950 2060 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7850 2100 50  0001 C CNN
 F 3 "~" H 7850 2100 50  0001 C CNN
@@ -2291,10 +2291,10 @@ Connection ~ 7850 2200
 Wire Wire Line
 	7850 2200 8050 2200
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H10
 U 1 1 5CD12F7C
 P 8200 2100
-F 0 "H?" H 8300 2151 50  0000 L CNN
+F 0 "H10" H 8300 2151 50  0000 L CNN
 F 1 "MountingHole_Pad" H 8300 2060 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8200 2100 50  0001 C CNN
 F 3 "~" H 8200 2100 50  0001 C CNN
@@ -2304,4 +2304,15 @@ $EndComp
 Connection ~ 8200 2200
 Wire Wire Line
 	8200 2200 8450 2200
+$Comp
+L MX_Switches:WS2812 LED?
+U 1 1 5CD98066
+P 4700 6150
+F 0 "LED?" H 4700 6425 50  0000 C CNN
+F 1 "WS2812" H 4700 6334 50  0000 C CNN
+F 2 "" H 4700 6150 50  0001 C CNN
+F 3 "" H 4700 6150 50  0001 C CNN
+	1    4700 6150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
