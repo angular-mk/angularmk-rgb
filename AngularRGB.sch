@@ -3788,4 +3788,8 @@ Wire Wire Line
 	7900 8600 7900 8700
 Wire Wire Line
 	7900 8700 8300 8700
+Text Label 6350 1050 0    50   ~ 0
+D_N
+Text Label 6350 2050 0    50   ~ 0
+D_P
 $EndSCHEMATC
