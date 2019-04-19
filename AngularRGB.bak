@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:AngularRGB-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -755,7 +755,7 @@ F 1 "MX_1.25U" H 5600 4284 50  0000 C CNN
 F 2 "MX_Switches:MX_1.25U" H 5600 4150 50  0001 C CNN
 F 3 "" H 5600 4150 50  0001 C CNN
 	1    5600 4150
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
 L AngularRGB-rescue:MX_1.75U-MX_Switches SW1.75U1
@@ -1375,7 +1375,7 @@ Wire Wire Line
 Wire Wire Line
 	12400 3700 12400 3550
 Wire Wire Line
-	5600 4400 5600 4300
+	5600 4400 5600 4350
 Wire Wire Line
 	5600 4300 5800 4300
 Wire Wire Line
@@ -1756,7 +1756,7 @@ Connection ~ 12000 3250
 Wire Wire Line
 	12000 3250 12700 3250
 Wire Wire Line
-	5400 3950 6000 3950
+	5400 3950 5600 3950
 Text GLabel 5400 3950 0    50   Input ~ 0
 R1
 Wire Wire Line
@@ -2034,8 +2034,6 @@ Wire Wire Line
 	5600 1000 5850 1000
 Wire Wire Line
 	5850 1000 5850 800 
-Wire Wire Line
-	5850 800  6050 800 
 Connection ~ 5600 1000
 Wire Wire Line
 	6500 750  6500 800 
@@ -2138,7 +2136,7 @@ Wire Wire Line
 	6750 1550 6800 1550
 Wire Wire Line
 	6800 1550 6800 1600
-Text Label 5900 800  2    50   ~ 0
+Text Label 5850 1000 2    50   ~ 0
 VBUS
 Text Label 1700 4250 2    50   ~ 0
 UCAP
@@ -3788,4 +3786,182 @@ Wire Wire Line
 	7900 8600 7900 8700
 Wire Wire Line
 	7900 8700 8300 8700
+Text Label 6350 1050 0    50   ~ 0
+D_N
+Text Label 6350 2050 0    50   ~ 0
+D_P
+Connection ~ 5600 3950
+Wire Wire Line
+	5600 3950 6000 3950
+Connection ~ 5600 4350
+Wire Wire Line
+	5600 4350 5600 4300
+Text Label 3100 3250 0    50   ~ 0
+MISO
+Text Label 3100 3150 0    50   ~ 0
+MOSI
+Text Label 3100 3050 0    50   ~ 0
+SCK
+Text Label 3100 2950 0    50   ~ 0
+SS
+Text Label 3100 4150 0    50   ~ 0
+SCL
+Text Label 3100 4250 0    50   ~ 0
+SDA
+Text GLabel 3100 4650 2    50   Input ~ 0
+R0
+Text GLabel 3100 4450 2    50   Input ~ 0
+R1
+Text GLabel 3100 4350 2    50   Input ~ 0
+R2
+Text GLabel 3100 3650 2    50   Input ~ 0
+R3
+Text GLabel 3300 4550 2    50   Input ~ 0
+C0
+Wire Wire Line
+	3300 4550 3100 4550
+Text GLabel 3300 4750 2    50   Input ~ 0
+C1
+Wire Wire Line
+	3300 4750 3100 4750
+Text GLabel 3300 4850 2    50   Input ~ 0
+C2
+Wire Wire Line
+	3300 4850 3100 4850
+Text GLabel 3300 3350 2    50   Input ~ 0
+C3
+Wire Wire Line
+	3300 3350 3100 3350
+Text GLabel 3200 5350 2    50   Input ~ 0
+C4
+Wire Wire Line
+	3200 5350 3100 5350
+Text GLabel 3200 5450 2    50   Input ~ 0
+C5
+Wire Wire Line
+	3200 5450 3100 5450
+Text GLabel 3200 5550 2    50   Input ~ 0
+C6
+Wire Wire Line
+	3200 5550 3100 5550
+Text GLabel 3200 5650 2    50   Input ~ 0
+C7
+Wire Wire Line
+	3200 5650 3100 5650
+Text GLabel 3200 5750 2    50   Input ~ 0
+C8
+Wire Wire Line
+	3200 5750 3100 5750
+Text GLabel 3200 5850 2    50   Input ~ 0
+C9
+Wire Wire Line
+	3200 5850 3100 5850
+Text GLabel 3300 3950 2    50   Input ~ 0
+C10
+Wire Wire Line
+	3300 3950 3100 3950
+Text GLabel 3300 3850 2    50   Input ~ 0
+C11
+Wire Wire Line
+	3300 3850 3100 3850
+Text Label 3100 5150 0    50   ~ 0
+RST
+Text Label 3100 3450 0    50   ~ 0
+CS
+Text Label 3100 3550 0    50   ~ 0
+IRQ
+$Comp
+L Connector:Conn_01x09_Male J1
+U 1 1 5D92FC0C
+P 1050 7750
+F 0 "J1" H 1150 8400 50  0000 C CNN
+F 1 "Conn_01x09_Male" H 1150 8300 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 1050 7750 50  0001 C CNN
+F 3 "~" H 1050 7750 50  0001 C CNN
+	1    1050 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 5D9327D7
+P 1300 8200
+F 0 "#PWR0103" H 1300 8050 50  0001 C CNN
+F 1 "VCC" H 1318 8373 50  0000 C CNN
+F 2 "" H 1300 8200 50  0001 C CNN
+F 3 "" H 1300 8200 50  0001 C CNN
+	1    1300 8200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5D9BC09D
+P 1450 8200
+F 0 "#PWR0104" H 1450 7950 50  0001 C CNN
+F 1 "GND" H 1455 8027 50  0000 C CNN
+F 2 "" H 1450 8200 50  0001 C CNN
+F 3 "" H 1450 8200 50  0001 C CNN
+	1    1450 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 8150 1300 8150
+Wire Wire Line
+	1300 8150 1300 8200
+Wire Wire Line
+	1450 8200 1450 8050
+Wire Wire Line
+	1450 8050 1250 8050
+Text Label 1250 7950 0    50   ~ 0
+RST
+NoConn ~ 1250 7850
+Text Label 1250 7750 0    50   ~ 0
+IRQ
+Text Label 1250 7650 0    50   ~ 0
+CS
+Text Label 1250 7550 0    50   ~ 0
+MOSI
+Text Label 1250 7450 0    50   ~ 0
+MISO
+Text Label 1250 7350 0    50   ~ 0
+SCK
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5DE0D40F
+P 5700 700
+F 0 "TP1" H 5758 820 50  0000 L CNN
+F 1 "TestPoint" H 5758 729 50  0000 L CNN
+F 2 "" H 5900 700 50  0001 C CNN
+F 3 "~" H 5900 700 50  0001 C CNN
+	1    5700 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 800  5850 800 
+Wire Wire Line
+	5850 800  5700 800 
+Wire Wire Line
+	5700 800  5700 700 
+Connection ~ 5850 800 
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5E039B7F
+P 7150 700
+F 0 "TP2" H 7208 820 50  0000 L CNN
+F 1 "TestPoint" H 7208 729 50  0000 L CNN
+F 2 "" H 7350 700 50  0001 C CNN
+F 3 "~" H 7350 700 50  0001 C CNN
+	1    7150 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5E039D40
+P 7150 700
+F 0 "#PWR022" H 7150 450 50  0001 C CNN
+F 1 "GND" H 7155 527 50  0000 C CNN
+F 2 "" H 7150 700 50  0001 C CNN
+F 3 "" H 7150 700 50  0001 C CNN
+	1    7150 700 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
