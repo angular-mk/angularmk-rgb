@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:AngularRGB-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -3802,8 +3801,6 @@ Text Label 3100 3150 0    50   ~ 0
 MOSI
 Text Label 3100 3050 0    50   ~ 0
 SCK
-Text Label 3100 2950 0    50   ~ 0
-SS
 Text Label 3100 4150 0    50   ~ 0
 SCL
 Text Label 3100 4250 0    50   ~ 0
@@ -3866,8 +3863,6 @@ Wire Wire Line
 	3300 3850 3100 3850
 Text Label 3100 5150 0    50   ~ 0
 RST
-Text Label 3100 3450 0    50   ~ 0
-CS
 Text Label 3100 3550 0    50   ~ 0
 IRQ
 $Comp
@@ -3964,4 +3959,10 @@ F 3 "" H 7150 700 50  0001 C CNN
 	1    7150 700 
 	1    0    0    -1  
 $EndComp
+Text Label 3100 3450 0    50   ~ 0
+CS
+Text GLabel 3300 2950 2    50   Input ~ 0
+LED_INPUT
+Wire Wire Line
+	3300 2950 3100 2950
 $EndSCHEMATC

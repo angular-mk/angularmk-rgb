@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:AngularRGB-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -3866,8 +3865,6 @@ Wire Wire Line
 	3300 3850 3100 3850
 Text Label 3100 5150 0    50   ~ 0
 RST
-Text Label 3100 3450 0    50   ~ 0
-CS
 Text Label 3100 3550 0    50   ~ 0
 IRQ
 $Comp
@@ -3930,7 +3927,7 @@ U 1 1 5DE0D40F
 P 5700 700
 F 0 "TP1" H 5758 820 50  0000 L CNN
 F 1 "TestPoint" H 5758 729 50  0000 L CNN
-F 2 "" H 5900 700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5900 700 50  0001 C CNN
 F 3 "~" H 5900 700 50  0001 C CNN
 	1    5700 700 
 	1    0    0    -1  
@@ -3948,7 +3945,7 @@ U 1 1 5E039B7F
 P 7150 700
 F 0 "TP2" H 7208 820 50  0000 L CNN
 F 1 "TestPoint" H 7208 729 50  0000 L CNN
-F 2 "" H 7350 700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7350 700 50  0001 C CNN
 F 3 "~" H 7350 700 50  0001 C CNN
 	1    7150 700 
 	1    0    0    -1  
@@ -3964,4 +3961,6 @@ F 3 "" H 7150 700 50  0001 C CNN
 	1    7150 700 
 	1    0    0    -1  
 $EndComp
+Text Label 3100 3450 0    50   ~ 0
+CS
 $EndSCHEMATC
