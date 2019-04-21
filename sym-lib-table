@@ -3,4 +3,5 @@
   (lib (name MX_Switches)(type Legacy)(uri ${KIPRJMOD}/MX_Switches.pretty/MX_Switches.lib)(options "")(descr ""))
   (lib (name AngularRGB-rescue)(type Legacy)(uri ${KIPRJMOD}/AngularRGB-rescue.lib)(options "")(descr ""))
   (lib (name Type-C)(type Legacy)(uri ${KIPRJMOD}/Type-C.pretty-master/Type-C.lib)(options "")(descr ""))
+  (lib (name MyAntennas)(type Legacy)(uri ${KIPRJMOD}/PCB_Antenna_Lib/MyAntennas.lib)(options "")(descr ""))
 )
