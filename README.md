@@ -1,4 +1,5 @@
-# Angular-RGB
+# angularmk-rgb
+## Angular RGB Mechanical Keyboard
 
 ![Image of the Keyboard](https://angularmk.xyz/img/product-header.jpg)
 
@@ -6,6 +7,8 @@
 
 The AngularRGB is a, minimalistic, 40% keyboard that supports perkey RGB Lighting. We've noticed that there are no purchasing options for anyone interested in a rgb per key backlit keyboard, so we decided to create one.
 [Website Description](https://angularmk.xyz/angular-rgb/)
+
+![Keyboard PCB](https://angularmk.xyz/img/Angular_RGB1.jpg)
 
 The PCB consists of a 4x12 matrix layed out as a COL to ROW diode configuration with a staggered design. Additionally, there are slots cut out on the board to provide the space for the WS2812B-Mini RGB LEDs that provide the lighting. There are also numerous protection features, such as ESD protections for both the data lines aswell as the power lines; fueses protecting the precious microcontroller in a case of short circuit; and many more.
 
